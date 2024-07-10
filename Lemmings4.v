@@ -41,6 +41,8 @@ module top_module(
         else begin
             if(i=='d20)
                 splat <= 1;
+            else
+                splat <= splat;
         end
     end
     
@@ -142,8 +144,6 @@ module top_module(
             else
                 digging = 1'b0;
         end  
-    
-  
     
     always@(*)begin
             if((state == left))
