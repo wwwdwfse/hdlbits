@@ -7,8 +7,8 @@ module top_module(
     input dig,
     output walk_left,
     output walk_right,
-    output aaah,
-    output digging ); 
+    output reg aaah,
+    output reg digging ); 
     
     parameter left=3'b000,right=3'b001,left_fall=3'b010,right_fall=3'b011,dig_left=3'b100,dig_right=3'b101;
     reg [2:0] state,next_state;

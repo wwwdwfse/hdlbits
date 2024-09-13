@@ -5,10 +5,10 @@ module top_module(
     input bump_right,
     input ground,
     input dig,
-    output walk_left,
-    output walk_right,
-    output aaah,
-    output digging ); 
+    output reg walk_left,
+    output reg walk_right,
+    output reg aaah,
+    output reg digging ); 
     
     
     
@@ -17,7 +17,7 @@ module top_module(
     parameter left=3'b000,right=3'b001,left_fall=3'b010,right_fall=3'b011;
     parameter dig_left=3'b100,dig_right=3'b101,die = 3'b110;
     reg [2:0] state,next_state;
-    int i;
+    reg i;
     reg splat;
     
     
