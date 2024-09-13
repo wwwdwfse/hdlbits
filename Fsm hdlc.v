@@ -1,3 +1,6 @@
+//This file is in Branch "reg_io"
+
+
 module top_module(
     input clk,
     input reset,    // Synchronous reset
